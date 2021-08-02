@@ -20,14 +20,7 @@ def main():
 	if choice == 'Tutorial':
 		st.header('Welcome to the Web Application Tutorial')
 		st.write('''
-			Hello everyone my name is ROY POSEIDON an am now the new White Lantern
-			....Kyle Rener i know write well i too was surprise but i have died 
-			too many times already and still came back to live i guese this is
-			expected right DC COMICS TO DE World and not the Hello World
-			Hello everyone my name is ROY POSEIDON an am now the new White Lantern
-			....Kyle Rener i know write well i too was surprise but i have died 
-			too many times already and still came back to live i guese this is
-			expected right DC COMICS TO DE World and not the Hello World
+			Hello everyone welcome to my web application which
 			''')
 	elif choice == 'Model':
 		st.header('Welcome to (Project Purpose)')
@@ -50,12 +43,12 @@ def main():
 		prediction = classifier.predict(arr)
 		if st.button('Predict'):
 			if prediction == 1:
-				st.success('Disease')
+				st.success('According to the given symptoms the patient in question has a DISEASE')
 				accuracy = classifier.score(arr,prediction)
 				st.success('Accuracy is {}'.format(accuracy))
 				# st.
 			elif prediction == 0:
-				st.success('No Disease')
+				st.success('According to the given symptoms the patient in question has NO DISEASE')
 				accuracy = classifier.score(arr,prediction)
 				st.success('Accuracy is {}'.format(accuracy))
 
